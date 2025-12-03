@@ -4,10 +4,11 @@ from snowflake.snowpark.functions import col
 
 # Write directly to the app
 st.title("My Parents New Healthy Diner")
+st.write(f"Breakfast Menu")
 
 # Add name box
-name_on_order = st.text_input("Name on Smoothie:")
-st.write("The name on your smoothie will be:", name_on_order)
+#name_on_order = st.text_input("Name on Smoothie:")
+#st.write("The name on your smoothie will be:", name_on_order)
 
 cnx = st.connection("snowflake")
 session = cnx.session()
